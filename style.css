@@ -57,7 +57,7 @@ body {
 }
 
 .nav-links a {
-    color: var(--text-muted);
+    color: #8B0000; background-color:var(--premium-gold);
     text-decoration: none;
     margin-left: 25px;
     font-size: 0.9rem;
@@ -79,7 +79,7 @@ body {
     display: flex;
     align-items: center;
     padding: 0 8%;
-    background: linear-gradient(135deg, #120203 0%, #0d0d0d 100%);
+    background: linear-gradient(45deg, #ff0000 50%, #ffffff 50%);
     margin-top: 60px;
 }
 
@@ -193,7 +193,7 @@ body {
     color: var(--text-muted);
     font-weight: 300;
 }
-
+.design-card img{ width: 100%; height: auto; display: block}
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .main-header {
