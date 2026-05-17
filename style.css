@@ -1,0 +1,214 @@
+/* Custom CSS Variables for Brand Colors */
+:root {
+    --bg-black: #0d0d0d;
+    --card-black: #1a1a1a;
+    --accent-red: #9e1b22;
+    --accent-red-hover: #bd242c;
+    --premium-gold: #d4af37;
+    --text-white: #ffffff;
+    --text-muted: #b3b3b3;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header & Navigation */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: rgba(13, 13, 13, 0.95);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--text-white);
+}
+
+.logo span {
+    color: var(--premium-gold);
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: var(--premium-gold);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    background: linear-gradient(135deg, #120203 0%, #0d0d0d 100%);
+    margin-top: 60px;
+}
+
+/* Subtle graphic ambient element */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(158, 27, 34, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 750px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-sub {
+    color: var(--premium-gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: var(--text-white);
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+
+/* Buttons */
+.cta-container {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent-red);
+    color: var(--text-white);
+    border: 1px solid var(--accent-red);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-red-hover);
+    border-color: var(--accent-red-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--premium-gold);
+    border: 1px solid var(--premium-gold);
+}
+
+.btn-secondary:hover {
+    background-color: var(--premium-gold);
+    color: var(--bg-black);
+    transform: translateY(-2px);
+}
+
+/* Highlight Section */
+.highlight-section {
+    padding: 80px 8%;
+    background-color: var(--card-black);
+    text-align: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--premium-gold);
+    margin-bottom: 20px;
+}
+
+.section-text {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 15px 5%;
+    }
+    .nav-links {
+        display: none; /* Can be handled with a mobile menu toggle later */
+    }
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .cta-container {
+        flex-direction: column;
+    }
+    .btn {
+        text-align: center;
+    }
+}
