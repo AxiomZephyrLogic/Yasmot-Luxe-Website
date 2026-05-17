@@ -1,0 +1,85 @@
+/* Welcome Letter Styling */
+.welcome-letter-container {
+    background-color: #f9f9f9; /* Soft background contrast */
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-letter {
+    background-color: #ffffff; /* Paper color */
+    max-width: 650px;
+    width: 100%;
+    padding: 40px 50px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Soft paper shadow */
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+}
+
+.letter-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666;
+}
+
+.brand-tag {
+    font-weight: 700;
+    color: #111;
+}
+
+.letter-divider {
+    border: 0;
+    border-top: 1px solid #111;
+    margin: 20px 0 30px 0;
+    opacity: 0.2;
+}
+
+.letter-body h2 {
+    font-family: 'Playfair Display', 'Georgia', serif; /* Elegant serif look */
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.letter-body p {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.letter-footer {
+    margin-top: 40px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.signature {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.creative-director {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+/* Responsive adjust for mobile */
+@map screen and (max-width: 480px) {
+    .welcome-letter {
+        padding: 30px 20px;
+    }
+    .letter-body h2 {
+        font-size: 1.6rem;
+    }
+}
