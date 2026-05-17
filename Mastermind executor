@@ -1,0 +1,34 @@
+<section class="mastermind-container">
+    <div class="mastermind-wrapper">
+        
+        <div class="mastermind-image-box">
+            <img src="mastermind.jpg" alt="The Creative Director of Yasmot Luxe" class="mastermind-img">
+            <div class="aura-overlay"></div>
+        </div>
+        
+        <div class="mastermind-content">
+            <span class="section-badge">The Visionary</span>
+            <h2 class="mastermind-title">Meet the Mastermind</h2>
+            
+            <p class="mastermind-lead">
+                Behind the seamless blend of modern grace and royal sophistication is a creative force dedicated to rewriting the rules of luxury fashion.
+            </p>
+            
+            <p class="mastermind-text">
+                With a proven track record of crafting bespoke, high-end designs, her work channels an unmistakable aura of creativity and effortless stylishness. Every stitch is deliberate, and every silhouette is engineered to project ultimate confidence.
+            </p>
+            
+            <div class="track-record-stats">
+                <div class="stat-item">
+                    <span class="stat-number">1,000+</span>
+                    <span class="stat-label">Bespoke Designs Crafted</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Premium Execution</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
