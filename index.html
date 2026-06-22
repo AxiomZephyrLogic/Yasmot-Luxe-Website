@@ -1,64 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasmot Luxe | Elite Styling</title>
-    <link rel="stylesheet" href="style.css">
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>YASMOTLUXE | The Luxe Atelier - Bespoke Nigerian Tailoring</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&amp;family=Hanken+Grotesk:wght@300;400;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#1c1b1b",
+                        "tertiary-container": "#737575",
+                        "on-tertiary-container": "#fcfcfc",
+                        "secondary": "#5f5e5e",
+                        "inverse-surface": "#3e2b31",
+                        "tertiary": "#5a5c5c",
+                        "primary": "#b40065",
+                        "inverse-primary": "#ffb0ca",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#8f6e78",
+                        "secondary-fixed": "#e5e2e1",
+                        "surface-variant": "#fadbe3",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#e3bdc7",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#f1d2da",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "primary-fixed-dim": "#ffb0ca",
+                        "on-primary-container": "#fffbff",
+                        "secondary-container": "#e2dfde",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "surface-tint": "#b90068",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#ffe8ed",
+                        "surface-container-highest": "#fadbe3",
+                        "surface-bright": "#fff8f8",
+                        "on-surface": "#28171c",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-background": "#28171c",
+                        "on-primary-fixed": "#3e001f",
+                        "on-secondary-container": "#636262",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#e10080",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface": "#fff8f8",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-surface-variant": "#5b3f48",
+                        "background": "#fff8f8",
+                        "inverse-on-surface": "#ffecf0",
+                        "primary-fixed": "#ffd9e3",
+                        "surface-container-low": "#fff0f3",
+                        "surface-container-high": "#ffe1e8",
+                        "on-primary-fixed-variant": "#8d004e",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "20px",
+                        "section-gap": "120px",
+                        "unit": "8px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "900"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .asymmetric-clip {
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px currentColor;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
-<body>
-
-    <header>
-        <div class="logo">YASMOT LUXE</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#collection">Collection</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <p class="subtitle">Welcome to Elite Styling</p>
-            <h1>Timeless Elegance:<br>Where Your Style Reigns Supreme</h1>
-            <p class="tagline">Elegance is the beauty that never fades. Step into Yasmot Luxe to be styled like the queen you are.</p>
-            <div class="cta-buttons">
-                <a href="#collection" class="btn primary-btn">View Collection</a>
-                <a href="#contact" class="btn secondary-btn">Book a Session</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="experience">
-        <h2>The Royal Experience</h2>
-        <p>We believe that clothing is more than just fabric—it is an assertion of power, grace, and individuality. Every piece is meticulously tailored to bring your inner royalty to the forefront.</p>
-    </section>
-
-    <section id="collection" class="gallery-section">
-        <h2>Our Designs</h2>
-        <div class="gallery-grid">
-            <div class="design-card">
-                <div class="image-placeholder">[ <img src="flyer.jpg" alt="Yasmot luxe fashion flyer] </div>
-                <div class="card-info">
-                    <h3>Aso Ebi Excellence</h3>
-                </div>
-            </div>
-            <div class="design-card">
-                <div class="image-placeholder">[ <img src="1.jpg" alt="Luxury Design 1"]</div>
-                <div class="card-info">
-                    <h3>Corporate Couture</h3>
-                </div>
-            </div>
-            <div class="design-card">
-                <div class="image-placeholder">[ <img src="2.jpg" alt="Luxury Design 2 ]</div>
-                <div class="card-info">
-                    <h3>Regal Ballgown</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</body>
-            </html>
-                    
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-white">
+<!-- Top Navigation Bar -->
+<nav class="bg-background dark:bg-on-background border-b border-on-background dark:border-outline-variant fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="font-display-lg text-headline-md font-black tracking-tighter text-on-background dark:text-background" href="#">YASMOTLUXE</a>
+<div class="hidden md:flex gap-8 font-label-caps text-label-caps uppercase tracking-widest">
+<a class="text-primary dark:text-inverse-primary border-b-2 border-primary pb-1" href="#">THE ATELIER</a>
+<a class="text-on-background dark:text-background hover:text-primary transition-colors" href="#">COLLECTIONS</a>
+<a class="text-on-background dark:text-background hover:text-primary transition-colors" href="#">BESPOKE SERVICES</a>
+<a class="text-on-background dark:text-background hover:text-primary transition-colors" href="#">THE JOURNAL</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-primary">shopping_bag</span>
+</button>
+<button class="hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-on-background">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[90vh] overflow-hidden flex items-center px-margin-desktop">
+<div class="grid grid-cols-12 w-full max-w-container-max mx-auto items-center gap-gutter">
+<div class="col-span-12 md:col-span-5 z-10 space-y-6">
+<img alt="Yasmot Luxe Logo" class="w-64 h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaIYboF-SvLI7373zWhPHZVOEcLbrYlpU-cKUQwDLu19SxcvmstPGQ-gngl-KcvhWPuLAycJy_Ox0jpjIIpsEGMHgyq-dFDmSHx_rj0_VfixfTyYXYloaLT3hbjPgV8qBabOOLoCgdsyQVMTo7SeoJvNiWRp9T7NXpFaPzdauQ5rl9DX3t_o8pEx3fHFZ3Qz940UeJmSoP_jHyG7RrdNFOoHYg339Q3cZtW55RqICpNLozC-Q8_RpBmFbsLSEojkfN8fKQANN-Py4"/>
+<h1 class="font-display-lg text-display-lg leading-tight">
+                        THE ART OF <br/>
+<span class="text-primary">NIGERIAN</span> <br/>
+                        BESPOKE
+                    </h1>
+<p class="font-body-lg text-body-lg max-w-md">
+                        Tailored to your silhouette. We believe every woman deserves a garment that speaks her name.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-10 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-on-background transition-all">
+                            Book Private Fitting
+                        </button>
+<button class="border border-on-background text-on-background px-10 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
+                            View Lookbook
+                        </button>
+</div>
+</div>
+<div class="hidden md:block col-span-7 relative h-[80vh]">
+<div class="absolute right-0 top-0 w-4/5 h-full border border-on-background p-4">
+<img class="w-full h-full object-cover" data-alt="A high-fashion editorial photograph of a stunning Nigerian woman wearing an intricate vibrant red bespoke wrap top and floral skirt. She is posed confidently in a luxury Lagos interior with soft ambient lighting highlighting the rich textures of the fabric. The aesthetic is opulent and modern, focusing on premium tailoring and vibrant colors against a dark, moody background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOgVL2t78Jf1jl5aFyf8VKQyImaGObaSaTMya1caq2_HmDDiR4eVQvebz-OWkFpwqqaGqzu0IqSATt316pQMPOmEqoDl0U4b_R8x5fzxKBHCrtpnnqOeYl_Os9dFRRyCNj8CAQNgwfR_-hC5PfApWRG78MylWxfo6fUe2pwbX24FgkDaZ1On8vGnhn5LU3STc4yJpiL0bTEmgcAF6d6-rmMdPO0SgSzSz5oXwMeB4VoJJ3xjDHDqceVWS2-nmWu_1QT63iuCP5pbg"/>
+</div>
+<div class="absolute left-0 bottom-10 w-1/2 h-2/3 border-8 border-background z-20 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A close-up fashion shot of an elegant Nigerian model wearing a stunning orange and white floral print sundress with dramatic bell sleeves. She wears a pristine white headwrap and stylish sunglasses. The background is a lush green garden at dusk, creating a vibrant maximalist aesthetic that celebrates modern Lagos luxury and traditional craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOZ8JJK-z8XlFhaD5Fye_dIGkSXdWwQEhsOeBv6u5zlLbKWBajr87oF2EL2uBocixef6_lDju6TVlqrjkjYmR2ISlKLyVfZ3fibWmfzyL9C5zPVbsTrrwpfYq-iBmQr3vNsKVjifek7B1e9T85GWtz6MKJCwjg5YC8G8H6-oWUqVBmdMAXqK_D5qfFaqg0f4V8jopevI6UxqIThwuWegp3_Tlb_JwH2wMcXPnhKVxp8_71j5j0yVGQ30SoD7GTinBH77E7hdVCVgQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Atelier Section -->
+<section class="py-section-gap bg-on-background text-background overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center">
+<div class="relative">
+<div class="absolute -top-20 -left-20 font-display-lg text-[200px] text-white/5 font-black pointer-events-none">STITCH</div>
+<div class="space-y-8 relative z-10">
+<h2 class="font-headline-lg text-headline-lg">Every stitch <br/> tells a story.</h2>
+<p class="font-body-lg text-body-lg text-background/80 leading-relaxed max-w-lg">
+                            We don't just sell dresses; we craft them for you. Our process begins with a conversation and ends with a masterpiece. Each seam is a testament to Nigerian excellence, utilizing the finest fabrics from Ankara to luxury silks.
+                        </p>
+<div class="flex items-center gap-4">
+<span class="w-24 h-[1px] bg-primary"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase">The Bespoke Standard</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<div class="aspect-[3/4] border border-background/20 overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A detailed black and white photograph of a professional tailor's hands carefully pinning a vibrant pink fabric on a wooden atelier table. Gold needles and silk thread are visible in the foreground. The lighting is focused and dramatic, capturing the precise craftsmanship and luxury environment of a high-end Nigerian fashion house." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjSgbCmHlgkwtEiW3EWgqlW28RV9klJtZn2-2tn7Hngqq6TWIBU4WWg4MDYdUMmZ2QH0F4WhRFnAROrnuhjEjec_eGGP6XmjW-AAWRUNP1WDX3MQGZY4h1dYQ3tHAYlRmAwZdk7bezdWOdz8jykr4YXiH9H0PCg4uUQIJ8QRhzXebl520MjrN0cILorr1ZN-LJc6SmbmSTl6frBAM21iCYWQJ_zFb5u_-6nZh2lir2oI2n9qcv-dwvjT7fTGUOPp6cAH8SPGVCXks"/>
+</div>
+<div class="bg-primary p-6">
+<p class="font-label-caps text-[10px] tracking-widest text-white/70 uppercase mb-2">Service 01</p>
+<h3 class="font-headline-md text-headline-md text-white text-xl">Aso-Ebi Glamour</h3>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container-highest p-6 h-32 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-background text-4xl" style="font-variation-settings: 'FILL' 1;">straighten</span>
+</div>
+<div class="aspect-[3/4] border border-background/20 overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A portrait of a luxurious fashion atelier in Lagos, featuring racks of vibrant silk dresses in shades of pink, purple, and gold. Large windows let in soft daylight, illuminating a professional sewing station. The space is minimalist but punctuated by bold color and texture, reflecting a modern African design aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrbfEOGjCzOUq_1XYN-R0QdUq7B8Nwag2MoPhAk6u_zPjsuVi6ZPY5tue_zamsvB7HIZGreW0KXAkCIzWbaRHcInRdjm2GwlS6y3VpTlF7INvzgPByhy31fFaki9MmmqDZHOmEz5NjblkbsSCDtdOXM1yM1SZ6soM81K-VXx434BnIDcd4pkiVOEBOIAxxR07s02_pEbcfmh_bzHp7xABKqZmAGJLarMlifQ0E3iTJuALAclYXCS8YG_4rDW6yjB48ILHOsAdgjhk"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Commissions Gallery (Bento Grid) -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase block mb-4">The Portfolio</span>
+<h2 class="font-headline-lg text-headline-lg">Recent Commissions</h2>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 border border-on-background flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 border border-on-background flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Large Feature -->
+<div class="md:col-span-2 md:row-span-2 group relative overflow-hidden border border-on-background">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Full-length fashion photograph of a woman in an orange and pink floral maxi dress with billowing white sleeves. She is standing on stone steps against a dark background. The dress is the focal point, showing incredible volume and vibrant pattern. The lighting is crisp, emphasizing the luxurious feel of the bespoke garment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5sn7-WGi0UBgqEbPZe7kpjiTIkXBekgwK_UqUDiX65X3qP8yieJ-lcdHGRtjDNQ6hD5LV8BC0cu54o4wggjLNlnZlcjkWPHbAVYJOG-H0pHqVrunD9fFf23sjsqMfU3Y2dlln_NqX-4Mnx_1k4NQK1GwLjmwDaEGsJraKRpXlQ1aD-K_PYFObM32U7bXkyooHl0VohBPLbD9RCn5Nfj_hrv4vLtyZ88XZatliNAbgAH0AbF6VA201nzDbphN5UTdQW17DhG-qz8I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+<p class="font-label-caps text-white/70 text-xs mb-2 uppercase">Custom Commission</p>
+<h4 class="font-headline-md text-white text-2xl">Sunrise Sundress</h4>
+</div>
+</div>
+<!-- Small Grid Items -->
+<div class="aspect-square border border-on-background group relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A portrait of a woman wearing a sophisticated purple satin halter top and deep plum trousers. She is looking down gracefully. The lighting is soft and warm, highlighting the high-quality sheen of the silk fabric. The setting is a minimalist, modern lounge, embodying the comfort and lifestyle aspect of the Yasmot Luxe brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9TE2ivtELHim1Cqy3CEtYAO7Py07zXaVsxIrtaNDdxR1yf_mCNqHz5n1SN-d2sm89krL9OgVcLAmN1iWHwWD3E7AFKE1U1miSOeqjeunezL-sJBO9iurH5FKu4RkjPNoWdBvGBtpxbhvn7Lmjwbh8FDH0lvKmlnhqIW_lB4OV89pPYIlqfR3jjjsUZOHq6btlojMjEyzUHh1OM1TYSAepGWnepVucTSpygk97N5AkQ9EDG4U7hUYeILWBX70aOFHx16yspfbtxV4"/>
+</div>
+<div class="aspect-square border border-on-background group relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A stylish woman seated in a luxury armchair wearing a blue and gold patterned traditional Nigerian gown. The fabric is rich with intricate cultural motifs. Her posture is regal and confident, set within a bright, airy room that emphasizes high-end bespoke lifestyle and cultural pride." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvmi-e8AZD8RFyuWoJ2-c54AKqfjXlPawSKYOZ5XK3k7kdocPzI6ikjLT7q4jn1BNpAjFqnm83HclEtI71ROoGhtpcJjN2oFw6Sh582pqabln0dYVqsWhsEL-I3bMcR80E-LtGbUBmqGPZd2Pg0PHJ_Zrv5EAsR7B5ZGLNUkgQDNXwm5xNxbYPdnKb2UdlSWZSi1mjLTHoRxCIwqG7mMVWV6X8sbdsVKNnOHjNYvXxCWjLoc_nYLuJjAra8A4xDxQuMs84jxaSAMk"/>
+</div>
+<div class="md:col-span-2 aspect-[16/9] border border-on-background group relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="An editorial shot of a woman in a vibrant red wrap top and tiered floral skirt walking in a modern architectural space. Her movement creates a dynamic blur in the fabric, showing the fluidity and expert cut of the bespoke tailoring. High contrast lighting creates deep shadows and brilliant highlights on the colorful textiles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_j9nHzud23erxHXch7ySuR2fdrRNRPvMvYFmS5czNPVpNJ214EQMeALGOlDMzAqR8A0An4We2WXxt9K6_pzPt_DsUDDfUnX5-qGzatjzxK41S4Zfs1lpNoU5hG_dyxe4YzNwXgSSSlUEzrJL-PnvTxWZH2t_Nt-PDGcjmYnOwPlJU5HpkCMd5SqLgJYtnC0aMq5-CfjoyKrcgMbAg1DHwHDs8ApmulrDwAEXCrp0C1RfxaIxnX4Wb0g3lmwf7O-WLLhoXWbomVqQ"/>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-section-gap bg-surface-container relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path class="text-primary" d="M0,0 L100,0 L100,100 L0,100 Z" fill="currentColor"></path>
+</svg>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop text-center relative z-10 space-y-8">
+<h2 class="font-display-lg text-headline-lg md:text-display-lg max-w-4xl mx-auto">
+                    READY TO START YOUR <span class="text-primary italic">BESPOKE JOURNEY?</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Experience the ultimate in personalized luxury. Book a private fitting at our Lagos atelier or start a virtual consultation today.
+                </p>
+<div class="pt-4 flex flex-wrap justify-center gap-6">
+<a class="bg-on-background text-background px-12 py-5 font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary transition-colors flex items-center gap-3" href="tel:+2349075706500">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+                        Book Your Private Fitting
+                    </a>
+<a class="border-b-2 border-on-background text-on-background px-4 py-2 font-label-caps text-label-caps uppercase tracking-widest hover:text-primary hover:border-primary transition-all" href="#">
+                        Consultation Process
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-background dark:bg-surface-container-lowest border-t border-outline">
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter px-margin-desktop py-section-gap w-full max-w-container-max mx-auto">
+<div class="space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-background dark:text-on-background">YASMOTLUXE</h2>
+<p class="text-background/70 max-w-xs font-body-md">
+                    CRAFTING EXCELLENCE. CELEBRATING IDENTITY. THE PINNACLE OF NIGERIAN BESPOKE TAILORING.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-background/20 flex items-center justify-center text-background hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 border border-background/20 flex items-center justify-center text-background hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">camera</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary uppercase">Atelier</h4>
+<ul class="space-y-2">
+<li><a class="text-background/70 hover:text-background transition-colors font-body-md" href="#">The Process</a></li>
+<li><a class="text-background/70 hover:text-background transition-colors font-body-md" href="#">Our Story</a></li>
+<li><a class="text-background/70 hover:text-background transition-colors font-body-md" href="#">Fabric Sourcing</a></li>
+<li><a class="text-background/70 hover:text-background transition-colors font-body-md" href="#">The Journal</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary uppercase">Connect</h4>
+<div class="space-y-2">
+<p class="text-background/70 font-body-md uppercase">Location</p>
+<p class="text-background font-body-md">MOAUM, LAGOS, NIGERIA</p>
+<p class="text-background/70 font-body-md pt-2 uppercase">Contact</p>
+<p class="text-background font-body-md">+234 907 570 6500</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-auto space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary uppercase">Newsletter</h4>
+<div class="flex border-b border-background/40 pb-2">
+<input class="bg-transparent border-none text-background placeholder:text-background/40 focus:ring-0 w-full" placeholder="Your Email" type="email"/>
+<button class="text-background hover:text-primary transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-background/10 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-background/50 font-label-caps text-[10px] tracking-widest uppercase">© 2024 YASMOTLUXE ATELIER. CRAFTED IN LAGOS.</p>
+<div class="flex gap-8">
+<a class="text-background/50 hover:text-background text-[10px] uppercase tracking-widest transition-colors" href="#">Privacy Policy</a>
+<a class="text-background/50 hover:text-background text-[10px] uppercase tracking-widest transition-colors" href="#">Terms of Service</a>
+<a class="text-background/50 hover:text-background text-[10px] uppercase tracking-widest transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="text-background/50 hover:text-background text-[10px] uppercase tracking-widest transition-colors" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll interaction for navbar
+        window.onscroll = function() {
+            const nav = document.querySelector('nav');
+            if (window.pageYOffset > 50) {
+                nav.classList.add('shadow-xl', 'py-4');
+                nav.classList.remove('py-6');
+            } else {
+                nav.classList.remove('shadow-xl', 'py-4');
+                nav.classList.add('py-6');
+            }
+        };
+    </script>
+</body></html>
